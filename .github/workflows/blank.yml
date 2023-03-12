@@ -63,7 +63,6 @@ jobs:
       - name: listado de buckets
         run: |
           aws s3api list-buckets
-          aws s3 landing-casas-123
             
       - name: Zappa Update
         run: |
