@@ -43,9 +43,7 @@ jobs:
           virtualenv env
           source env/bin/activate
           pip install -r requirements.txt
-          cd lambda1
-          zappa update
-          #pytest
+          pytest
           
       - name: Execute flake8
         run: |
@@ -61,6 +59,16 @@ jobs:
             aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws-session-token: ${{secrets.AWS_SESSION_TOKEN}}
             aws-region: us-east-1
+            
+      - name: Zappa Update
+        run: |
+          pip install virtualenv
+          virtualenv env
+          source env/bin/activate
+          pip install -r requirements.txt
+          zappa update
+            
+        
             
 
           
