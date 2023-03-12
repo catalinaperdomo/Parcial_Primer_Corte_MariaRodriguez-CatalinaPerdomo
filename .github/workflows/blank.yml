@@ -47,6 +47,7 @@ jobs:
           
       - name: Execute flake8
         run: |
+          cd lambda1
           flake8 .
         
       - name: Configure AWS Credentials
