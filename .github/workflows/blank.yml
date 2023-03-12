@@ -43,13 +43,16 @@ jobs:
           virtualenv env
           source env/bin/activate
           pip install -r requirements.txt
-          pytest
+          cd lambda1
+          zappa update
+          #pytest
           
       - name: Execute flake8
         run: |
           pip install flake8
           cd lambda1
           flake8 .
+          
         
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
