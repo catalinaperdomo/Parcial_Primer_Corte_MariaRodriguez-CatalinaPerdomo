@@ -3,7 +3,7 @@
 
 Lambda1
 
-Usando zappa crear una función lambda que descargue la primera página de resultados del sitio Finca Raiz(https://www.fincaraiz.com.co) para la venta de casas en el sector de chapinero.
+Usando zappa crear una función lambda que descargue la primera página de resultados del sitio Finca Raiz([https://www.fincaraiz.com.co](https://casas.mitula.com.co/searchRE/nivel3-Chapinero/nivel2-Bogot%C3%A1/nivel1-Cundinamarca/tipo-Casa/q-Bogot%C3%A1-Chapinero)) para la venta de casas en el sector de chapinero.
 Esta lambda se debe ejecutar todos los lunes a las 9 am.
 La página html se debe guardar en un bucket s3://landing-casas-xxx/yyyy-mm-dd.html
 
